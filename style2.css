@@ -98,7 +98,7 @@ font-family:El Messiri;
 .alignleft {
   float: left;
 
-   color:#d2612a;
+   color:#2d2a26;
    white-space: nowrap;
 
   padding-left: 85px;
@@ -106,14 +106,14 @@ font-family:El Messiri;
 }
 .alignright {
  float: right;
-    color:#d2612a;
+    color:#2d2a26;
 
   padding-right: 85px;
 }
 
 .aligncenter {
  float: center;
-    color:#121212;
+    color:#2d2a26;
 
   padding-right: 85px;
 }
