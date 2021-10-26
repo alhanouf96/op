@@ -96,13 +96,13 @@ localStorage.setItem("storageName",val);
 window.location.href = "deet.html";
  break;
 
-
-
-case "am":
-var val = "amm"
+ case "ta":
+var val = "taa"
 localStorage.setItem("storageName",val);
 window.location.href = "deet.html";
  break;
+
+
 
 case "ym":
 var val = "ymm"
@@ -112,12 +112,12 @@ window.location.href = "deet.html";
 
 /*tea*/
 
-
- case "ta":
-var val = "taa"
+case "am":
+var val = "amm"
 localStorage.setItem("storageName",val);
 window.location.href = "deet.html";
  break;
+
 
 
 
