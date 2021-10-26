@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="font/flaticon.css"> 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style2.css"> 
+<link href="https://fonts.googleapis.com/css?family=El Messiri&display=swap" rel="stylesheet"></link>
+
+<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet"></link>
+
+</head>
+
+
+<body>
+
+<div class="mobile-container ">
+
+<div class="card">
+
+  <div class="container-fluid scal">
+  <img src="" alt="Denim Jeans" style="width:100%" id="myImage" class="card__image loading">
+
+   <i class="flaticon-right-arrow-angle btn" onclick="goBack()"></i>
+
+</div>
+
+  <h3 id="title"></h3>
+
+ <div id="textbox">
+                     <p class="alignleft" id="kal"></p>
+                     <p class="alignright" id="price"></p>
+                       <p class="aligncenter" id="price2"></p>
+                         </div>
+
+  <p class="det" id="dt"></p>
+ <p class="det" id="dt-en"></p>
+
+</div>
+
+
+</div>
+
+
+<script>
+
+var loc=localStorage.getItem("storageName");
+
+ 
+   switch(loc) {
+
+       case "ki":
+
+   document.getElementById("myImage").src = "images/drip/oplo.jpg" ;
+   document.getElementById("title").innerHTML = " Oplo Burger | اوبلو برجر ";
+   document.getElementById("kal").innerHTML = "650 kal" ;
+   document.getElementById("price").innerHTML = "49.00 SR";
+   document.getElementById("dt").innerHTML = "١٣٠ غ واقيو- بصل مكرمل -  جرجير - صوص الترافل";
+   document.getElementById("dt-en").innerHTML = "130g wagyu - caramelized onion  - rocca - truffle sauce ";
+   break;
+
+   case "vii":
+
+   document.getElementById("myImage").src = "images/drip/black.jpg";
+   document.getElementById("title").innerHTML = " Black Angus Burger | بلاك انجوس برجر";
+   document.getElementById("kal").innerHTML = "640 kal";
+   document.getElementById("price").innerHTML = "34.00 SR";
+   document.getElementById("dt").innerHTML = "شريحتين لحم بلاك انجوس- شريحة جبن  سويسرية - البصل المكرمل - وقطع اللحم المقدد- صوص الباربكيو";
+   document.getElementById("dt-en").innerHTML = "double angus- swiss cheese - caramelized onion- BBQ sauce- bicon ";
+   break;
+
+   case "kmm":
+
+   document.getElementById("myImage").src = "images/drip/han.jpeg" ;
+   document.getElementById("title").innerHTML = "Honey Mustard Chicken | هوني ماسترد برجر";
+   document.getElementById("kal").innerHTML = "630 kal";
+   document.getElementById("price").innerHTML = "27.00 SR";
+   document.getElementById("dt").innerHTML = "كرسبي تشكن - امريكان تشيز - الكولسلو - صوص العسل والماسترد";
+   document.getElementById("dt-en").innerHTML = "Crispy Chicken - American Cheese  - coleslaw-Honey Mustard sauce";
+   break;
+  
+  /*hot*/
+
+   case "laa":
+
+   document.getElementById("myImage").src = "images/drip/traf.jpg" ;
+   document.getElementById("title").innerHTML = " Truffle Chicken | برجر ترافل دجاج";
+   document.getElementById("kal").innerHTML = "660 kal";
+   document.getElementById("price").innerHTML = "29.00 SR";
+   document.getElementById("dt").innerHTML = "تشكن كرسبي - شريحة جبن - سلطة الكولسلو - صوص البافالو الخاص ";
+   document.getElementById("dt-en").innerHTML = "Crispy Chicken - American Cheese - colesalw - buffalo sauce";
+   break;
+   
+
+   case "spp":
+
+   document.getElementById("myImage").src = "images/drip/baf.jpg"  ;
+   document.getElementById("title").innerHTML = " Buffalo Chicken Burger | برجر بافالو تشكن";
+   document.getElementById("kal").innerHTML = "650 kal";
+   document.getElementById("price").innerHTML = "28.00 SR";
+   document.getElementById("dt").innerHTML = "تشكن كرسبي - شريحة جبن - سلطة الكولسلو - صوص البافالو الخاص ";
+   document.getElementById("dt-en").innerHTML = "Crispy Chicken - American Cheese - colesalw - buffalo sauce ";
+   break;
+  
+   case "stkk":
+
+  
+   document.getElementById("title").innerHTML = " Black Angus RibEye | بلاك انجوس ريب اي";
+   document.getElementById("kal").innerHTML = "570 kal";
+   document.getElementById("price").innerHTML = "75.00 SR";
+   document.getElementById("dt").innerHTML = "بطاطا حلوة - ( صوص الأعشاب - صوص الترفل ) ";
+   document.getElementById("dt-en").innerHTML = "Sweet Potato - (herbs sauce - truffle sauce)";
+   break;
+   
+
+   case "fll":
+
+   document.getElementById("myImage").src = "images/hot/opfrz.jpg";
+   document.getElementById("title").innerHTML = " Oplo Fries | اوبلو فرايز";
+   document.getElementById("kal").innerHTML = "470 kal";
+   document.getElementById("price").innerHTML = "26.00 SR";
+   document.getElementById("dt").innerHTML = "بطاطس - لحم مقدد- جبن  - بصل مقرمش - باربكيو صوص - صوص اوبلو ";
+   document.getElementById("dt-en").innerHTML = "oplo sauce Fries -bicon -cheese - Crispy Onion  - BBQ Sauce ";
+   break;
+
+
+   case "ess":
+
+   document.getElementById("myImage").src = "images/hot/chfrz.jpg";
+   document.getElementById("title").innerHTML = " Chicken Fries | تشكن فرايز ";
+   document.getElementById("kal").innerHTML = "610 kal";
+   document.getElementById("price").innerHTML = "23.00 SR";
+   document.getElementById("dt").innerHTML = "بطاطس - تشكن كرسبي - جبن  - بصل مقرمش-صوص اوبلو الخاص";
+   document.getElementById("dt-en").innerHTML = "Fries - Crispy Chicken - cheese - Crispy Onion - Oplo Sauce ";
+   break;
+
+
+   case "trfzz":
+
+   document.getElementById("myImage").src = "images/hot/trfrz.jpg";
+   document.getElementById("title").innerHTML = " Truffle fries | ترافل فرايز";
+   document.getElementById("kal").innerHTML = "530 kal";
+   document.getElementById("price").innerHTML = "26.00 SR";
+   document.getElementById("dt").innerHTML = "بطاطس - صوص الترافل  - شرائح قطع من الكمأه";
+   document.getElementById("dt-en").innerHTML = "Fries - truffle sauce - ​​truffles sliced ​​ ";
+   break;
+       
+   case "amm":
+
+   document.getElementById("myImage").src = "images/hot/bashr.jpg";
+   document.getElementById("title").innerHTML = " Buffalo Shrimp | بافالو شرمب";
+   document.getElementById("kal").innerHTML = "550 kal";
+   document.getElementById("price").innerHTML = "34.00 SR";
+   document.getElementById("dt").innerHTML = "٧ قطع من الروبيان المقلي - صوص البافلو ";
+   document.getElementById("dt-en").innerHTML = "7 Pieces Buffalo Shrimps - Buffalo Sauce ";
+   break;
+
+
+   case "ymm":
+
+   document.getElementById("myImage").src = "images/hot/chpts.jpg";
+   document.getElementById("title").innerHTML = " Bufaalo Chicken Bits | بافالو تشكن بايتس";
+   document.getElementById("kal").innerHTML = "390 kal";
+   document.getElementById("price").innerHTML = "32.00 SR";
+   document.getElementById("dt").innerHTML = "٧ قطع من الدجاج المقلي- صوص البافلو  ";
+   document.getElementById("dt-en").innerHTML = "7 Pieces Buffalo chicken - Buffalo Sauce ";
+   break;
+
+/*tea*/
+   case "taa":
+
+   document.getElementById("myImage").src = "images/hot/shr.jpg";
+   document.getElementById("title").innerHTML = " Coconut Shrimp | كوكونت شرمب";
+   document.getElementById("kal").innerHTML = "620 kal";
+   document.getElementById("price").innerHTML = "34.00 SR";
+   document.getElementById("dt").innerHTML = "٧ قطع من الروبيان المقلي - مغطاه بجوز الهند المبشور - صوص هوني ماسترد ";
+   document.getElementById("dt-en").innerHTML = "7 Pieces Shrimps  - Topped with cocount  -Honey Mustard Sauce";
+   break;
+/*cold*/
+
+
+   case "cproo":
+
+   document.getElementById("myImage").src = "images/cold/co.jpg";
+   document.getElementById("title").innerHTML = "Cola | كولا";
+   document.getElementById("kal").innerHTML = "150 kal";
+   document.getElementById("price").innerHTML = "5.00 SR";
+   break;
+
+   case "cprr":
+
+   document.getElementById("myImage").src = "images/cold/dit.jpg";
+   document.getElementById("title").innerHTML = "Cola Diet | كولا دايت";
+   document.getElementById("kal").innerHTML = "0 kal";
+   document.getElementById("price").innerHTML = "5.00 SR";
+   break;
+
+   case "csvv":
+
+   document.getElementById("myImage").src = "images/cold/spr.jpg";
+   document.getElementById("title").innerHTML = "Sprite | سبرايت";
+   document.getElementById("kal").innerHTML = "168 kal";
+   document.getElementById("price").innerHTML = "5.00 SR";
+   break;
+
+   case "cree":
+
+   document.getElementById("myImage").src = "images/cold/wht.jpg";
+   document.getElementById("title").innerHTML = "Water | ماء";
+   document.getElementById("price2").innerHTML = "3.00 SR";
+   break;
+
+
+   case "ckhh":
+
+   document.getElementById("myImage").src = "images/ches/or1.jpg" ;
+   document.getElementById("title").innerHTML = "مير صوص";
+   document.getElementById("price2").innerHTML = "2.00 SR";
+   break;
+
+   case "cfrr":
+   document.getElementById("myImage").src = "images/ches/or1.jpg" ;
+   document.getElementById("title").innerHTML = "ميبل صوص";
+   document.getElementById("price2").innerHTML = "2.00 SR";
+   break;
+
+   case "cbee":
+   document.getElementById("myImage").src = "images/ches/whi.jpg" ;
+   document.getElementById("title").innerHTML = "سبيشل وايت صوص";
+   document.getElementById("price2").innerHTML = "2.00 SR";
+   break;
+
+/*cheae*/
+   case "bgg":
+   document.getElementById("myImage").src = "images/ches/or2.jpg" ;
+   document.getElementById("title").innerHTML = "سي صوص";
+   document.getElementById("price2").innerHTML = "2.00 SR";
+   break;
+
+
+
+   }
+
+
+
+</script>
+
+
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+
+</body>
+</html>
+
