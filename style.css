@@ -108,7 +108,7 @@ border-bottom-left-radius: 4px;
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #white;
-    background-color: #121212;
+    background-color: #2d2a26;
 
     border-radius: 16px;
 }
@@ -118,7 +118,7 @@ border-bottom-left-radius: 4px;
 
 
  
-   background:#121212;
+   background:#2d2a26;
    opacity: 0.6;
     border-radius: 16px;
 
@@ -224,7 +224,7 @@ padding-left: 0;
 .alignleft {
   float: left;
 
-  color:#d2612a;
+  color:#2d2a26;
    white-space: nowrap;
 
 
@@ -232,7 +232,7 @@ padding-left: 0;
 .alignright {
   float: right;
 
-  color:#d2612a;
+  color:#2d2a26;
 }
 
 .right{
@@ -240,7 +240,7 @@ padding-left: 0;
    font-size: 12px;
    padding-left: 4px;
    padding-top:  1.5px;
-    color:#d2612a;
+    color:#2d2a26;
 }
 
 .icons{
@@ -302,6 +302,6 @@ width:200px;
   font-size: 10px;
   text-align:center;
  padding: 1px;
-color:#d2612a;
+color:#2d2a26;
 
 }
