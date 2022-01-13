@@ -180,7 +180,23 @@ var val = "bgg"
 localStorage.setItem("storageName",val);
 window.location.href = "deet.html";
  break;
+case "su1":
+var val = "suu1"
+localStorage.setItem("storageName",val);
+window.location.href = "deet.html";
+ break;
 
+case "su2":
+var val = "suu2"
+localStorage.setItem("storageName",val);
+window.location.href = "deet.html";
+ break;
+
+case "su3":
+var val = "suu3"
+localStorage.setItem("storageName",val);
+window.location.href = "deet.html";
+ break;
  
 }
 }
